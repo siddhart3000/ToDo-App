@@ -12,7 +12,7 @@ This app demonstrates **clean architecture**, **real-time sync**, **smart notifi
 
 ## 📱 APK Download
 
-[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/siddhart3000/ToDo-App/releases/download/v1.0/ToDo-App-v1.0.apk)
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/siddhart3000/ToDo-App/releases/tag/v1.0)
 
 ---
 

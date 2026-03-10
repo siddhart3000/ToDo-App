@@ -110,7 +110,8 @@ flutter run
 
 | Login | Dashboard | Tasks | Analytics | Dark Mode |
 |-------|-----------|-------|-----------|-----------|
-| `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` | `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` | `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` | `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` | `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]` |
+| ![Login](screenshots/Login.jpeg) | ![Dashboard](screenshots/Dashboard.jpeg) | ![Tasks](screenshots/Task.jpeg) | ![Analytics](screenshots/Analytics.jpeg) | ![Dark Mode](screenshots/Profile(Dark%20Theme).jpeg) |
+
 
 ---
 

@@ -1,0 +1,58 @@
+# ------------------------------
+# Flutter / Dart
+# ------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Generated files
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# ------------------------------
+# Android / Gradle
+# ------------------------------
+*.iml
+.gradle/
+local.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ------------------------------
+# iOS
+# ------------------------------
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+
+# ------------------------------
+# IDE files
+# ------------------------------
+.idea/
+.vscode/
+*.ipr
+*.iws
+
+# ------------------------------
+# Firebase configuration
+# ------------------------------
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+
+# ------------------------------
+# Symbolication files
+# ------------------------------
+app.*.symbols
+app.*.map.json

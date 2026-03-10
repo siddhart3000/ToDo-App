@@ -1,24 +1,24 @@
 # 🚀 ToDo App
 
-[![Flutter](https://img.shields.io/badge/Flutter-v3.19-blue?logo=flutter)](https://flutter.dev)  
-[![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow?logo=firebase)](https://firebase.google.com)  
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
-Stars [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fsiddhart3000%2FToDo-App%2Fstargazers")
+[![Flutter](https://img.shields.io/badge/Flutter-v3.19-blue?logo=flutter)](https://flutter.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow?logo=firebase)](https://firebase.google.com)
+[![License](https://img.shields.io/github/license/siddhart3000/ToDo-App)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/siddhart3000/ToDo-App?style=social)](https://github.com/siddhart3000/ToDo-App/stargazers)
 
 A modern productivity and task management mobile application built using **Flutter** and **Firebase**.  
-This app helps users organize daily tasks, track productivity, and receive smart reminders through a clean, premium UI inspired by modern SaaS dashboards.
+This app demonstrates **clean architecture**, **real-time sync**, **smart notifications**, and **analytics visualization** — designed as a production-style portfolio project.
 
 ---
 
 ## 📱 APK Download
 
-👉 Download Latest APK [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2Fsiddhart3000%2FToDo-App%2Freleases%2Fdownload%2Fv1.0%2FToDo-App-v1.0.apk")
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/siddhart3000/ToDo-App/releases/download/v1.0/ToDo-App-v1.0.apk)
 
 ---
 
 ## 🎥 Demo
 
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+![Demo GIF](screenshots/demo.gif)
 
 ---
 
@@ -68,7 +68,7 @@ lib
    ├ task_card.dart
    ├ category_card.dart
    └ custom_components.dart
-```
+
 
 State management: **Riverpod**
 

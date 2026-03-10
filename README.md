@@ -15,13 +15,6 @@ This app demonstrates **clean architecture**, **real-time sync**, **smart notifi
 [![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/siddhart3000/ToDo-App/releases/tag/v1.0)
 
 ---
-
-## 🎥 Demo
-
-![Demo GIF](screenshots/demo.gif)
-
----
-
 ## ✨ Features
 
 - 🔐 **Authentication**: Secure Firebase Email & Password login  

@@ -1,140 +1,200 @@
-# 🚀 ToDo App
+<div align="center">
 
-[![Flutter](https://img.shields.io/badge/Flutter-v3.19-blue?logo=flutter)](https://flutter.dev)
-[![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow?logo=firebase)](https://firebase.google.com)
-[![License](https://img.shields.io/github/license/siddhart3000/ToDo-App)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/siddhart3000/ToDo-App?style=social)](https://github.com/siddhart3000/ToDo-App/stargazers)
+<img src="https://img.shields.io/badge/Flutter-3.19-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+<img src="https://img.shields.io/badge/Firebase-Backend-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+<img src="https://img.shields.io/badge/Riverpod-State_Mgmt-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" />
 
-A modern productivity and task management mobile application built using **Flutter** and **Firebase**.  
-This app demonstrates **clean architecture**, **real-time sync**, **smart notifications**, and **analytics visualization** — designed as a production-style portfolio project.
+<br/><br/>
 
----
+# ✅ ToDo App
 
-## 📱 APK Download
+**A production-grade task management app built with Flutter & Firebase.**  
+Clean architecture · Real-time sync · Smart notifications · Analytics dashboard
 
-[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/siddhart3000/ToDo-App/releases/tag/v1.0)
+<br/>
 
----
-## ✨ Features
+[![Download APK](https://img.shields.io/badge/⬇️%20Download%20APK-v1.0-4CAF50?style=for-the-badge&logo=android&logoColor=white)](https://github.com/siddhart3000/ToDo-App/releases/tag/v1.0)
+&nbsp;
+[![View on GitHub](https://img.shields.io/badge/⭐%20Star%20on%20GitHub-181717?style=for-the-badge&logo=github)](https://github.com/siddhart3000/ToDo-App)
 
-- 🔐 **Authentication**: Secure Firebase Email & Password login  
-- 📝 **Task Management**: Create, edit, delete, mark tasks as TODO/DONE  
-- 📂 **Categories**: Work, Design, Meetings, Learning, Personal, Health, Shopping, Others  
-- 🔎 **Smart Search**: Instant search & dynamic filtering  
-- 🔔 **Notifications**: Smart reminders & alerts  
-- 📊 **Analytics**: Weekly charts, completion stats, category performance  
-- 🌙 **Dark Mode**: Material 3 design with smooth transitions  
-- 👤 **Profile Management**: Update name, photo, phone, address  
-
----
-
-## 🧱 Architecture
-
-```plaintext
-lib
- ├ core
- │ ├ constants
- │ ├ theme
- │ └ utils
- │
- ├ models
- │ ├ task_model.dart
- │ └ user_model.dart
- │
- ├ providers
- │ ├ auth_provider.dart
- │ └ task_provider.dart
- │
- ├ services
- │ ├ firebase_service.dart
- │ ├ auth_service.dart
- │ └ task_service.dart
- │
- ├ screens
- │ ├ auth
- │ ├ home
- │ ├ analytics
- │ ├ profile
- │ └ add_task
- │
- └ widgets
-   ├ task_card.dart
-   ├ category_card.dart
-   └ custom_components.dart
-
-
-State management: **Riverpod**
-
----
-
-## 🛠 Tech Stack
-
-- **Framework**: Flutter (Material 3)  
-- **State Management**: Riverpod  
-- **Backend**: Firebase Authentication, Realtime Database, Storage  
-- **Packages**: `flutter_riverpod`, `flutter_local_notifications`, `fl_chart`, `google_fonts`, `permission_handler`, `image_picker`
-
----
-
-## ⚙️ Setup Instructions
-
-1️⃣ Clone the repository  
-```bash
-git clone https://github.com/siddhart3000/ToDo-App.git
-cd ToDo-App
-```
-
-2️⃣ Install dependencies  
-```bash
-flutter pub get
-```
-
-3️⃣ Configure Firebase  
-- Add `android/app/google-services.json`  
-- Add `ios/Runner/GoogleService-Info.plist`  
-- Update database URL in `lib/services/task_service.dart`
-
-4️⃣ Generate launcher icons  
-```bash
-dart run flutter_launcher_icons
-```
-
-5️⃣ Run the application  
-```bash
-flutter run
-```
+</div>
 
 ---
 
 ## 📸 Screenshots
 
 | Login | Dashboard | Tasks | Analytics | Dark Mode |
-|-------|-----------|-------|-----------|-----------|
+|:-----:|:---------:|:-----:|:---------:|:---------:|
 | ![Login](screenshots/Login.jpeg) | ![Dashboard](screenshots/Dashboard.jpeg) | ![Tasks](screenshots/Task.jpeg) | ![Analytics](screenshots/Analytics.jpeg) | ![Dark Mode](screenshots/Profile(Dark%20Theme).jpeg) |
 
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Authentication** | Secure Firebase Email & Password login with session persistence |
+| 📝 **Task Management** | Create, edit, delete, and toggle tasks between TODO / DONE |
+| 📂 **Categories** | Work, Design, Meetings, Learning, Personal, Health, Shopping, Others |
+| 🔎 **Smart Search** | Instant search with real-time dynamic filtering |
+| 🔔 **Notifications** | Local reminders and smart due-date alerts |
+| 📊 **Analytics** | Weekly charts, completion rates, and category-level performance |
+| 🌙 **Dark Mode** | Material 3 design with seamless light/dark transitions |
+| 👤 **Profile** | Update name, photo, phone number, and address |
+
+---
+
+## 🏗️ Architecture
+
+This app follows a **layered clean architecture** pattern, keeping UI, business logic, and data concerns fully separated.
+
+```
+lib/
+├── core/
+│   ├── constants/          # App-wide constants
+│   ├── theme/              # Material 3 light & dark themes
+│   └── utils/              # Helper functions & extensions
+│
+├── models/
+│   ├── task_model.dart     # Task data model
+│   └── user_model.dart     # User profile model
+│
+├── providers/              # Riverpod state providers
+│   ├── auth_provider.dart
+│   └── task_provider.dart
+│
+├── services/               # Business logic & Firebase integration
+│   ├── firebase_service.dart
+│   ├── auth_service.dart
+│   └── task_service.dart
+│
+├── screens/                # UI screens
+│   ├── auth/
+│   ├── home/
+│   ├── analytics/
+│   ├── profile/
+│   └── add_task/
+│
+└── widgets/                # Reusable UI components
+    ├── task_card.dart
+    ├── category_card.dart
+    └── custom_components.dart
+```
+
+**Data Flow:** `UI (Screens/Widgets)` → `Riverpod Providers` → `Services` → `Firebase (Auth · Realtime DB · Storage)`
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Framework** | Flutter 3.19 — Material 3 |
+| **State Management** | Riverpod |
+| **Auth** | Firebase Authentication |
+| **Database** | Firebase Realtime Database |
+| **Storage** | Firebase Cloud Storage |
+| **Charts** | fl_chart |
+| **Notifications** | flutter_local_notifications |
+| **Fonts** | google_fonts |
+| **Image Picker** | image_picker + permission_handler |
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Flutter SDK ≥ 3.0.0
+- Dart SDK ≥ 3.0.0
+- A Firebase project with Authentication, Realtime Database, and Storage enabled
+
+### 1 · Clone the repository
+
+```bash
+git clone https://github.com/siddhart3000/ToDo-App.git
+cd ToDo-App
+```
+
+### 2 · Install dependencies
+
+```bash
+flutter pub get
+```
+
+### 3 · Configure Firebase
+
+Add your Firebase config files to the project:
+
+```
+android/app/google-services.json        ← Android
+ios/Runner/GoogleService-Info.plist     ← iOS
+```
+
+Then update the database URL in `lib/services/task_service.dart`:
+
+```dart
+// Replace with your Firebase project's Realtime Database URL
+const String databaseUrl = 'https://your-project-id-default-rtdb.firebaseio.com';
+```
+
+### 4 · Generate launcher icons *(optional)*
+
+```bash
+dart run flutter_launcher_icons
+```
+
+### 5 · Run the app
+
+```bash
+flutter run
+```
+
+---
+
+## 📁 Project Structure — Key Files
+
+```
+TodoApp/
+├── android/
+│   └── app/google-services.json       ← Firebase Android config
+├── ios/
+│   └── Runner/GoogleService-Info.plist ← Firebase iOS config
+├── lib/
+│   └── ...                            ← Full source (see Architecture above)
+├── screenshots/                       ← App screenshots
+├── pubspec.yaml                       ← Dependencies
+└── README.md
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!  
-1. Fork the repository  
-2. Create a feature branch  
-3. Submit a pull request  
+Contributions, issues, and feature requests are welcome!
+
+1. **Fork** the repository
+2. **Create** your feature branch — `git checkout -b feature/your-feature`
+3. **Commit** your changes — `git commit -m "feat: add your feature"`
+4. **Push** to the branch — `git push origin feature/your-feature`
+5. **Open** a Pull Request
+
+Please follow the [Conventional Commits](https://www.conventionalcommits.org/) format and make sure your code passes `flutter analyze` before submitting.
 
 ---
 
-## ⭐ Support
+## 📄 License
 
-If you found this project useful, please give it a ⭐ on GitHub!
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
 ---
 
-## 👨‍💻 Author
+<div align="center">
 
-**Siddharth Singh**  
-GitHub: [siddhart3000](https://github.com/siddhart3000)
+Made with ❤️ by **[Siddharth Singh](https://github.com/siddhart3000)**
 
+*If this project helped you, please consider giving it a ⭐ — it means a lot!*
 
+</div>
 
-Would you like me to also design a **visual architecture diagram** (boxes/arrows showing flow between Flutter, Riverpod, Firebase Auth, DB, Storage) so your README stands out even more?
